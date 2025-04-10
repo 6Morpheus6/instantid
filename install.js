@@ -26,11 +26,11 @@ module.exports = {
         "uv pip install -r requirements.txt",
       ]
     }
-  }, {
-    method: "fs.link",
-    params: {
-      venv: "app/env"
-    }
+//  }, {
+//    method: "fs.link",
+//    params: {
+//      venv: "app/env"
+//    }
   }, {
     method: "notify",
     params: {
