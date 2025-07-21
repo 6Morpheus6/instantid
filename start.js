@@ -5,11 +5,14 @@ module.exports = {
     "params": {
       "path": "app",
       "venv": "env",
-      "message": "python app.py",
       "env": {
         "MODE": "{{input.type}}"
       },
-      "on": [{ "event": "/http:\/\/[0-9.:]+/", "done": true }]
+      "message": "python app.py",
+      "on": [{
+        "event": "/http:\/\/[0-9.:]+/",
+        "done": true
+      }]
     }
   }, {
     "method": "local.set",
